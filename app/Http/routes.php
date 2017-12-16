@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/FormInput',array(
+	'as'	=> 'FormInput',
+	'uses'	=> 'HomeController@FormInput'
+));
+
+Route::post('/FormInput/postRFC',array(
+	'as'	=> 'postRFC',
+	'uses'	=> 'HomeController@postRFC'
+));
+
